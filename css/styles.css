@@ -1,0 +1,20 @@
+.Productos {background-image: url(../img/fondokratos.jpg);}
+
+
+.header h1 {text-align: center;
+background-image: url(../img/background.jpg);
+height: 130px;
+font-size: 100px;
+color: brown;
+text-shadow: 1px 1px #fff;
+}
+
+.boton {text-align: center;}
+    
+.boton .boton-dentro {background-color: yellow;
+    font-size: 20px;
+    font-family: cursive;
+    margin-top: 2%;}
+
+
+
