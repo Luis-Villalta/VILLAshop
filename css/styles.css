@@ -1,3 +1,6 @@
+* {background-image: url(../img/fondokratos.jpg);
+    background-attachment: fixed;}
+
 .Productos {background-image: url(../img/fondokratos.jpg);}
 
 
@@ -15,6 +18,26 @@ text-shadow: 1px 1px #fff;
     font-size: 20px;
     font-family: cursive;
     margin-top: 2%;}
+
+.Producto .card {border-color: cadetblue;}
+
+.Producto .card .card-img-top {width: 239px;
+height: 200px;}
+
+.Producto .card .card-body .card-title {color: red;
+text-shadow: 1px 1px #fff;
+font-size: 25px;
+margin-left: 10%;}
+
+.Producto .card .card-body .card-text {font-size: 20px;
+margin-left: 20%;}
+
+.Producto .card .card-body .btn {font-size: 15px;
+border-color: aqua;
+position: absolute; top: 80%; left: 50%;
+background-image: url(../img/fondopaisaje.jpg);}
+
+.h2 {position: absolute; top: 140%; left: 25%;}
 
 
 
