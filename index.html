@@ -1,68 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VILLAshop</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-</head>
+    <head>
+        <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>VILLAshop</title>
+                        <link rel="stylesheet" href="css/styles.css">
+                            <link rel="shortcut icon" href="img/Logo HD 2.jpg">
+                                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+                            <link
+                        rel="stylesheet"
+                    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    </head>
 <body>
-    <section class="header"> 
-        <h1>VILLAShop</h1>
-    </section>
-       
-        <div class="Producto">
-            <article class="card" style="width: 15rem; position: absolute; top: 30%; left: 10%;">
-                <img src="img/gt710.jfif" class="card-img-top" alt="GT 710">
-                    <div class="card-body">
-                        <h5 class="card-title">GT 710 2GB</h5>
-                        <p class="card-text">150$</p>
-                        <a href="#" class="btn">Comprar</a>
-                    </div>
-        </div>
+     
+        <header>
+            <nav class="navbar navbar-light bg-dark min-vw-200">
+              <h2 class="p-3 text-white">VILLAshop</h2>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-white"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal"
+                  >
+                    <i class="bi bi-cart mx-5" id="carritoContenedor">0</i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </header>
 
-        <div class="Producto">
-            <div>
-                <article class="card" style="width: 15rem; position: absolute; top: 30%; left: 70%;">
-                    <img src="img/gt740.jfif" class="card-img-top" alt="GT 740">
-                        <div class="card-body">
-                            <h5 class="card-title">GT 740 4GB</h5>
-                            <p class="card-text">200$</p>
-                            <a href="#" class="btn">Comprar</a>
-                        </div>
+          <main>
+            <div class="row mt-5" id="contenedor"></div>
+          </main>
+   
+<div class="container-xl">
+            <div class="modal" tabindex="-1" role="dialog" id="modal">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Carrito</h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body"></div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" id="vaciarCarrito">
+                      Vaciar carrito
+                    </button>
+                    <button type="button" id="procesarCompra" class="btn btn-primary">
+                      Continuar compra
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Cerrar
+                    </button>
+      
+                    <span>Precio total:</span>
+                    <p class="text-center" id="precioTotal"></p>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-
-        <div class="Producto">
-            <article class="card" style="width: 15rem; position: absolute; top: 30%; left: 40%;">
-                <img src="img/gtx1060.jpg" class="card-img-top" alt="GTX 1060">
-                    <div class="card-body">
-                        <h5 class="card-title">GTX 1060 3gb</h5>
-                        <p class="card-text">250$</p>
-                        <a href="#" class="btn">Comprar</a>
-                    </div>
-        </div>
-
-        <div class="Producto">
-            <article class="card" style="width: 15rem; position: absolute; top: 90%; left: 10%;">
-                <img src="img/rtx3090.jfif" class="card-img-top" alt="RTX 3090">
-                    <div class="card-body">
-                        <h5 class="card-title">RTX 3090 24GB</h5>
-                        <p class="card-text">1300$</p>
-                        <a href="#" class="btn">Comprar</a>
-                    </div>
-        </div>
+</div>
+       
 
         <div class="h2">
             <h2>Este es nuestro Catálogo de momento. ¡Vuelve Pronto!</h2>
         </div>
     
        
-        <script src="./js/main.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+                <script src="js/bootstrap.bundle.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
